@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+    
+    
+}
+#container{
+    position: relative;
+    height: 100%;   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.back{
+    transform: translateZ(-40px) scale(6);
+}
+.fore{
+    transform: translateZ(-20px) scale(3.2);
+}
+.fore,.back{
+    position: absolute;
+    height: 100%;   
+    width: 100%;
+    object-fit: cover;
+}
+h1{
+    position:absolute;
+    font-size: 7rem;
+    color: rgb(235, 242, 242);
+    text-shadow: 2px 2px 2px grey;
+    letter-spacing: 5px;
+    top: 22%;
+    font-family:monospace
+}
+section{
+    background-color: rgb(45, 45, 45);
+    padding: 5rem 0;
+    color: white;
+}
+.bg1{
+    background-image: url(img/sport-1.jpg);
+}
+.bg2{
+    background-image: url(img/sport-2.jpg);
+}
+.bg3{
+    background-image: url(img/sport-3.jpg);
+}
+.bg{
+    width: 100%;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.headings{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    color: rgba(0, 0, 0, 0.884);
+}
+h2{
+    font-size: 3rem;
+    padding: 0 10rem;
+    
+}
+.firstPara{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+h4{
+    font-size: 3rem;
+}
